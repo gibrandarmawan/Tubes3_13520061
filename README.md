@@ -69,4 +69,11 @@ Project is:  _complete_
 - Program ini dibuat untuk memenuhi Tugas Besar ke-3 dari mata kuliah IF2211 Strategi Algoritma
 - Terima kasih kepada Bapak/Ibu Dosen IF2211 Strategi Algoritma karena telah membuat tugas ini terwujudkan
 
+## Useful Links
+- Repo Development Backend
+https://github.com/ubaidalih/Tubes3_13520061
+- Repo Development Frontend
+https://github.com/Fikri-IF/STIMA-FRONT-END
+- Link Video
+https://www.youtube.com/watch?v=YsMW4URNdsk
 
