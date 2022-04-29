@@ -7,6 +7,7 @@ const SearchHistory = () => {
     const[cari,updateCari] = useState('');
     const[isResponseSuccess,updateResponseSuccess]= useState(false);
     const[dataShow,updateDataShow]= useState([]);
+    const[messageStatus,updateMessageStatus] = useState('');
 
     const handleInput = (event) => {
         updateCari(event.target.value)
@@ -23,19 +24,19 @@ const SearchHistory = () => {
         const theData = result.data
         console.log('hasil dari getResult',theData)
 
-        const resultData = theData.map(person => (
-            <p className='Result-Border'>
-                {person.tanggal} {person.nama}-{person.penyakit}-{person.status}-{person.persentase}%
-            </p>
-        ))
-        updateDataShow(resultData)
-        console.log('hasil dari resultData',resultData)
-
-        if(result.data.length != 0){
-            updateResponseSuccess(true)
+        if(result.data.message != null){
+            updateMessageStatus(result.data.message)
+            updateResponseSuccess(false)
         }
         else{
-            updateResponseSuccess(false)
+            const resultData = theData.map(person => (
+                <p className='Result-Border'>
+                    {person.tanggal} {person.nama}-{person.penyakit}-{person.status}-{person.persentase}%
+                </p>
+            ))
+            updateDataShow(resultData)
+            console.log('hasil dari resultData',resultData)
+            updateResponseSuccess(true)
         }
         
     }
@@ -68,6 +69,9 @@ const SearchHistory = () => {
                     <div className='App-Result' hidden={!isResponseSuccess} id="HasilCari" >
                         <hr></hr>
                         {dataShow}
+                    </div>
+                    <div className='App-Result' hidden={isResponseSuccess} id="HasilCari" >
+                        <strong>{messageStatus}</strong>
                     </div>
                 </body>
             </div>
