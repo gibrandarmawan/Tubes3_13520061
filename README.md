@@ -44,15 +44,21 @@
 3. Pastikan terminal berada pada directory program, jika belum:
    ```sh
    cd <path repo>
+   cd src
    ```
-4. Install npm packages
+4. Jalankan backend
+   ```sh
+   go run main.go
+   ```
+5. Install npm packages
    ```sh
    npm install
    ```
-5. Jalankan npm
+6. Jalankan npm
    ```js
    npm start
    ```
+7. Jalankan web pada http://localhost:3000
 
 
 
