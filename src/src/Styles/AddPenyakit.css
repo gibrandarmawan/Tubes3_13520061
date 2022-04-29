@@ -1,0 +1,77 @@
+.App-header {
+    /* background-color: #282c34; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.App-body{
+    border: 3px solid #aba7c9;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    border-style: rounded;
+    align-items: center;
+    color: #4f3dca;
+    max-width: fit-content;
+}
+h3{
+    text-align: center;
+    display: block;
+    border-top: 3px solid rgb(19, 172, 214);
+    border-bottom: 3px solid rgb(19, 172, 214); 
+    margin: 10px 10px 10px 10px;
+}
+.Option-txt{
+    border: 3px solid #aba7c9;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    border-style: rounded;
+    color: #4f3dca;
+    float:left;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border-radius: 12px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4f3dca;
+}
+  .button1:hover {
+    background-color: #4f3dca;
+    color: white;
+}
+.Input{
+    border-radius: 16px;
+    padding: 10px;
+    border:2px solid #4f3dca;
+}
+.submitField{
+    margin: auto;
+    width: fit-content;
+}
+.App-Result{
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.txt{
+    font-size: medium;
+    margin: 3px 3px 3px 3px;
+    text-align: center;
+}
