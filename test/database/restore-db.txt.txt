@@ -1,0 +1,3 @@
+Load the dump into your local database using the pg_restore tool. If objects exist in a local copy of the database already, you might run into inconsistencies when doing a pg_restore.
+
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb dna-db-dump.dump
